@@ -6,14 +6,12 @@ class task9{
         System.out.println("Enter the number of elements:");
         int n=sc.nextInt();
         int[]a1= new int [n];
-        List<Integer> a2 = new ArrayList<>();
         System.out.println("Enter elements:");
-        for(int i=0;i<n;i++){
+        for(int i=n-1;i>=0;i--){
             a1[i]=sc.nextInt();
         }
-             for(int i=n-1;i>=0;i--){
-                 a2.add(a1[i]);
+                  System.out.print(Arrays.toString(a1));
+           
+    }      
         }
-        System.out.println("array elements in reverse order:"+ a2);
-    }
-}
+       
